@@ -17,10 +17,10 @@ The repository contains the full R script, the input data, a written report (PL 
 |---|---|
 | Descriptive statistics | Respondent profile (gender, education, age), trait rating summaries |
 | Categorical association | Contingency tables, χ² test, Cramér's V, Tschuprow's T, (corrected) contingency coefficient |
-| Reliability | Cronbach's α, split-half reliability (Spearman–Brown, Guttman) on a 24-item questionnaire |
-| Similarity & distance | Jaccard distance/similarity, simple matching (Sokal–Michener), Gower distance for mixed-type variables |
+| Reliability | Cronbach's α, split-half reliability (Spearman-Brown, Guttman) on a 24-item questionnaire |
+| Similarity & distance | Jaccard distance/similarity, simple matching (Sokal-Michener), Gower distance for mixed-type variables |
 | Cluster analysis | Hierarchical clustering (average and complete linkage), dendrograms, cluster cutting |
-| Correlation & factorability | Spearman correlation matrices, Bartlett's test, Kaiser–Meyer–Olkin (KMO) |
+| Correlation & factorability | Spearman correlation matrices, Bartlett's test, Kaiser-Meyer-Olkin (KMO) |
 | Dimension reduction | Parallel analysis and scree plots, PCA (varimax / oblimin), exploratory factor analysis (ML, principal axis, minres) |
 | Correspondence analysis | Row/column profiles, inertia, quality of representation, contributions, biplots (17 traits × 9 politicians) |
 
@@ -34,10 +34,10 @@ The repository contains the full R script, the input data, a written report (PL 
 ├── data/
 │   ├── ankietowani.xlsx   # respondent characteristics (gender, education, age)
 │   ├── cechy.xlsx         # trait ratings of the politicians
-│   ├── pytania.xlsx       # questionnaire items x1–x24 (reliability, PCA/EFA)
+│   ├── pytania.xlsx       # questionnaire items x1-x24 (reliability, PCA/EFA)
 │   ├── tablice.xlsx       # data for contingency tables (age × answer)
-│   ├── zerojeden.xlsx     # binary (0/1) matrix – Jaccard / simple matching
-│   ├── mieszane.xlsx      # mixed-type variables – Gower distance
+│   ├── zerojeden.xlsx     # binary (0/1) matrix - Jaccard / simple matching
+│   ├── mieszane.xlsx      # mixed-type variables - Gower distance
 │   └── srednie.xlsx       # mean ratings (traits × politicians) – correspondence analysis
 └── report/
     ├── Polish_Political_Scene_EN.pdf                    # report (English)
@@ -56,7 +56,7 @@ Input file paths are controlled by the `DATA_DIR` variable at the top of the scr
 
 ### Results
 
-The full interpretation of results – cluster composition, factor structure, correspondence maps – is available in the report: [`report/Polish_Political_Scene_EN.pdf`](report/Polish_Political_Scene_EN.pdf).
+The full interpretation of results - cluster composition, factor structure, correspondence maps - is available in the report: [`report/Polish_Political_Scene_EN.pdf`](report/Polish_Political_Scene_EN.pdf).
 
 ### Notes
 
@@ -65,7 +65,7 @@ The full interpretation of results – cluster composition, factor structure, co
 
 ### Author
 
-**Maciej Otto** – [GitHub](https://github.com/MaciekOtto)
+**Maciej Otto** - [GitHub](https://github.com/MaciekOtto)
 
 Licensed under the [MIT License](LICENSE).
 
@@ -85,8 +85,8 @@ Repozytorium zawiera pełny skrypt w R, dane wejściowe, raport (PL i EN) oraz p
 |---|---|
 | Statystyki opisowe | Profil respondentów (płeć, wykształcenie, wiek), podsumowania ocen cech |
 | Zależności między cechami jakościowymi | Tablice kontyngencji, test χ², V Cramera, T Czuprowa, (skorygowany) współczynnik kontyngencji |
-| Rzetelność | α Cronbacha, rzetelność połówkowa (Spearman–Brown, Guttman) dla kwestionariusza z 24 pytaniami |
-| Podobieństwo i odległość | Odległość/podobieństwo Jaccarda, Simple Matching (Sokala–Michenera), odległość Gowera dla zmiennych mieszanych |
+| Rzetelność | α Cronbacha, rzetelność połówkowa (Spearman-Brown, Guttman) dla kwestionariusza z 24 pytaniami |
+| Podobieństwo i odległość | Odległość/podobieństwo Jaccarda, Simple Matching (Sokala-Michenera), odległość Gowera dla zmiennych mieszanych |
 | Analiza skupień | Hierarchiczna analiza skupień (średnie i pełne wiązanie), dendrogramy, wyodrębnianie grup |
 | Korelacje i zasadność analizy czynnikowej | Macierze korelacji Spearmana, test Bartletta, miara KMO |
 | Redukcja wymiarów | Analiza równoległa i wykresy osypiska, PCA (varimax / oblimin), eksploracyjna analiza czynnikowa (ML, osi głównych, minres) |
@@ -102,10 +102,10 @@ Repozytorium zawiera pełny skrypt w R, dane wejściowe, raport (PL i EN) oraz p
 ├── data/
 │   ├── ankietowani.xlsx   # charakterystyka respondentów (płeć, wykształcenie, wiek)
 │   ├── cechy.xlsx         # oceny cech polityków
-│   ├── pytania.xlsx       # pytania kwestionariusza x1–x24 (rzetelność, PCA/EFA)
+│   ├── pytania.xlsx       # pytania kwestionariusza x1-x24 (rzetelność, PCA/EFA)
 │   ├── tablice.xlsx       # dane do tablic kontyngencji (wiek × odpowiedź)
 │   ├── zerojeden.xlsx     # macierz zero-jedynkowa – Jaccard / Simple Matching
-│   ├── mieszane.xlsx      # zmienne mieszane – odległość Gowera
+│   ├── mieszane.xlsx      # zmienne mieszane - odległość Gowera
 │   └── srednie.xlsx       # średnie oceny (cechy × politycy) – analiza korespondencji
 └── report/
     ├── Polish_Political_Scene_EN.pdf                    # raport (angielski)
@@ -118,13 +118,13 @@ Repozytorium zawiera pełny skrypt w R, dane wejściowe, raport (PL i EN) oraz p
 1. Sklonuj repozytorium i otwórz je w RStudio (katalog roboczy ustaw na główny folder repozytorium).
 2. Otwórz plik `R/polish_political_scene_analysis.R`.
 3. Uruchamiaj skrypt sekcja po sekcji. Brakujące pakiety instalują się automatycznie
-   (`readxl`, `psych`, `tidyverse`, `DescTools`, `corrplot`, `vegan`, `proxy`, `cluster`, `factoextra`, `ca` i inne – zob. sekcja 0 skryptu).
+   (`readxl`, `psych`, `tidyverse`, `DescTools`, `corrplot`, `vegan`, `proxy`, `cluster`, `factoextra`, `ca` i inne - zob. sekcja 0 skryptu).
 
 Ścieżka do plików z danymi jest ustawiana zmienną `DATA_DIR` na początku skryptu (domyślnie: `data`).
 
 ### Wyniki
 
-Pełna interpretacja wyników – skład grup, struktura czynnikowa, mapy korespondencji – znajduje się w raporcie: [`report/Polska Scena Polityczna Raport - Maciej Otto.pdf`](report/Polska%20Scena%20Polityczna%20Raport%20-%20Maciej%20Otto.pdf).
+Pełna interpretacja wyników - skład grup, struktura czynnikowa, mapy korespondencji – znajduje się w raporcie: [`report/Polska Scena Polityczna Raport - Maciej Otto.pdf`](report/Polska%20Scena%20Polityczna%20Raport%20-%20Maciej%20Otto.pdf).
 
 ### Uwagi
 
@@ -133,6 +133,6 @@ Pełna interpretacja wyników – skład grup, struktura czynnikowa, mapy koresp
 
 ### Autor
 
-**Maciej Otto** – [GitHub](https://github.com/MaciekOtto)
+**Maciej Otto** - [GitHub](https://github.com/MaciekOtto)
 
 Licencja: [MIT](LICENSE).
