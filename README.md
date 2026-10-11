@@ -1,14 +1,9 @@
 # Polish Political Scene – Multivariate Analysis in R
 # Polska Scena Polityczna – analiza wielowymiarowa w R
 
-🇬🇧 [English](#-english) | 🇵🇱 [Polski](#-polski)
-
-![R](https://img.shields.io/badge/R-276DC3?logo=r&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-
 ---
 
-## 🇬🇧 English
+## English
 
 ### Overview
 
@@ -76,7 +71,7 @@ Licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🇵🇱 Polski
+## Polski
 
 ### Opis projektu
 
