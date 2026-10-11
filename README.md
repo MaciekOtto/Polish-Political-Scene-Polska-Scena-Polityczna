@@ -1,5 +1,5 @@
-# Polish Political Scene – Multivariate Analysis in R
-# Polska Scena Polityczna – analiza wielowymiarowa w R
+# Polish Political Scene - Multivariate Analysis in R
+# Polska Scena Polityczna - analiza wielowymiarowa w R
 
 ---
 
